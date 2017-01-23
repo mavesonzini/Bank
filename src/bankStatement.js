@@ -1,31 +1,19 @@
 function BankAccount(balance){
-  this.totalBalance = 0;
+    this.balance = [];
 }
 var transaction = new BankAccount;
 
-// BankAccount.prototype.getBalance = function(balance){
-//   balance = this.balance;
-//   var sum = 0
-//   for(i = 0; i < balance.length; i++){
-//     sum += balance[i];
-//   }
-//   return sum;
-// };
-
-BankAccount.prototype.deposit = function(amount){
-  balance = this.totalBalance;
-  var sum = 0
-  for(i = 0; i < totalBalance; i++){
-    sum += amount;
+BankAccount.prototype.getBalance = function(balance){
+  balance = this.balance;
+  totalBalance = 0;
+  for(i = 0; i < balance.length; i ++){
+    totalBalance += balance[i];
   }
-  return sum;
+  return totalBalance;
 };
 
-BankAccount.prototype.withdraw = function(amount){
+BankAccount.prototype.deposit = function(amount){
   balance = this.balance;
-  var sum = 0;
-  for(i = 0; i < balance.length; i++){
-    sum += balance[i];
-  }
-  return sum - amount;
+  balance.push(amount);
+  return balance;
 };
