@@ -1,5 +1,3 @@
-avascript Bank Kata
-
 Tech Test Week
 
 Week Ten
