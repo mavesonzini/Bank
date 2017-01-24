@@ -23,5 +23,5 @@ AccountStatement.prototype.withdraw = function(amount){
   transaction.moneyWithdraw(amount);
   transaction.balance += this.balance - amount;
   this.transactions.push(transaction);
-  this.balance -= transaction.withdrawa;
+  this.balance -= transaction.withdrawal;
 };
